@@ -42,19 +42,19 @@ const Screenshots = () => {
   };
 
   return (
-    <section id="screenshots" className="py-20 bg-gray-900">
+    <section id="screenshots" className="py-20 bg-gradient-to-br from-indigo-900 via-blue-900 to-purple-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-white mb-6">Screenshots</h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Explore the stunning visuals and immersive environments of Nexus Wars
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Screenshots</h2>
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+            Explore the stunning visuals and immersive environments of Ganglands
           </p>
         </div>
         
         {/* 3x2 Grid Collage */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
           {screenshots.map((screenshot, index) => (
-            <Card key={screenshot.id} className="bg-gray-800 border-gray-700 overflow-hidden group cursor-pointer hover:scale-105 transition-all duration-300">
+            <Card key={screenshot.id} className="bg-gray-800/80 border-gray-700 overflow-hidden group cursor-pointer hover:scale-105 transition-all duration-300 backdrop-blur-sm">
               <div className="relative aspect-video">
                 <img 
                   src={screenshot.src}
@@ -72,12 +72,6 @@ const Screenshots = () => {
               </div>
             </Card>
           ))}
-        </div>
-        
-        <div className="text-center mt-8">
-          <p className="text-gray-400">
-            Click any image to view full size
-          </p>
         </div>
       </div>
     </section>
