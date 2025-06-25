@@ -1,23 +1,15 @@
-
 import { Button } from "@/components/ui/button";
 import { Play, Heart, ExternalLink } from "lucide-react";
-
 const Hero = () => {
   const handleWishlist = () => {
     window.open("https://store.steampowered.com/", "_blank");
   };
-
-  return (
-    <section 
-      id="trailer" 
-      className="min-h-screen flex items-center justify-center pt-20 relative"
-      style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
-      }}
-    >
+  return <section id="trailer" className="min-h-screen flex items-center justify-center pt-20 relative" style={{
+    backgroundImage: "url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
       
@@ -25,9 +17,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Left side - Logo and Description */}
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fade-in">
-              NEXUS WARS
-            </h1>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fade-in">Ganglands</h1>
             <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 animate-fade-in">
               Enter a world where reality bends to your will. Master cybernetic powers and fight for humanity's future.
             </p>
@@ -38,9 +28,9 @@ const Hero = () => {
                 Wishlist on Steam
                 <ExternalLink className="w-5 h-5" />
               </Button>
-              <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200" onClick={() => document.getElementById('demo')?.scrollIntoView({
+              <Button variant="outline" onClick={() => document.getElementById('demo')?.scrollIntoView({
               behavior: 'smooth'
-            })}>
+            })} className="border-2 border-white hover:bg-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-200 text-gray-950">
                 Try Demo
               </Button>
             </div>
@@ -64,8 +54,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
