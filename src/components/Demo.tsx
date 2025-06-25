@@ -9,7 +9,9 @@ const Demo = () => {
   };
 
   return (
-    <section id="demo" className="py-20 bg-gradient-to-br from-slate-800 via-blue-900 to-slate-900">
+    
+<section id="demo" className="py-20 bg-gradient-to-b from-[#000000] to-[#111827]">
+  <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-t from-[#111827] to-transparent pointer-events-none z-10" />
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Try the Demo</h2>

@@ -4,7 +4,7 @@ import { ExternalLink, Heart } from "lucide-react";
 
 const Header = () => {
   const handleWishlist = () => {
-    window.open("https://store.steampowered.com/", "_blank");
+    window.open("https://store.steampowered.com/app/3734080/Ganglands/", "_blank");
   };
 
   return (

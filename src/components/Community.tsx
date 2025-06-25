@@ -20,7 +20,7 @@ const Community = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-800 via-blue-900 to-slate-900">
+<section  className="py-20 bg-gradient-to-b from-[#111827] to-[#030406]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Join Our Community</h2>
