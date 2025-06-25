@@ -4,7 +4,7 @@ const Hero = () => {
   const handleWishlist = () => {
     window.open("https://store.steampowered.com/", "_blank");
   };
-  return <section id="trailer" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 pt-20 bg-[#c4d9b1]/0">
+  return <section id="trailer" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 pt-20 bg-[#ff3131]/0">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 animate-fade-in">
