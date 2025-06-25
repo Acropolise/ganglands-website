@@ -8,20 +8,20 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4 md:space-x-8">
             <h1 className="text-xl md:text-2xl font-bold text-white">Ganglands</h1>
             <nav className="hidden md:flex space-x-6">
-              <a href="#trailer" className="text-gray-300 hover:text-white transition-colors">Trailer</a>
-              <a href="#demo" className="text-gray-300 hover:text-white transition-colors">Demo</a>
-              <a href="#screenshots" className="text-gray-300 hover:text-white transition-colors">Screenshots</a>
+              <a href="#trailer" className="text-slate-300 hover:text-white transition-colors">Trailer</a>
+              <a href="#demo" className="text-slate-300 hover:text-white transition-colors">Demo</a>
+              <a href="#screenshots" className="text-slate-300 hover:text-white transition-colors">Screenshots</a>
             </nav>
           </div>
           <Button 
             onClick={handleWishlist} 
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-3 md:px-6 py-2 rounded-lg transition-all duration-200 flex items-center gap-1 md:gap-2 text-sm md:text-base"
+            className="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-3 md:px-6 py-2 rounded-lg transition-all duration-200 flex items-center gap-1 md:gap-2 text-sm md:text-base"
           >
             <Heart className="w-3 md:w-4 h-3 md:h-4" />
             <span className="hidden sm:inline">Wishlist on</span>
