@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/70 z-0" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center max-w- 7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-7xl mx-auto">
           {/* Left side */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-6 animate-fade-in">Ganglands</h1>
@@ -42,21 +42,16 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Right side - Video Trailer */}
+          {/* Right side - YouTube Embed */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-xl rounded-xl overflow-hidden shadow-2xl animate-scale-in">
-              <div className="aspect-video bg-slate-800 flex items-center justify-center relative">
-                <video 
-                  className="w-full h-full object-cover" 
-                  poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/f47bd0c425406c81537e759ed883e3219f8e733c/capsule_616x353.jpg?t=1750594845" 
-                  preload="metadata"
-                  playsInline
-                  controls
-                >
-<source src="https://acropolise.github.io/steam-game-showcase-site/videos/trailer.mp4" type="video/mp4" />
-               Your browser does not support the video tag.
-                </video>
-              </div>
+            <div className="relative w-full max-w-xl rounded-xl overflow-hidden shadow-2xl animate-scale-in aspect-video">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/GUPZ2xMey6Q"
+                title="Ganglands Trailer"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
