@@ -46,16 +46,17 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative w-full max-w-xl rounded-xl overflow-hidden shadow-2xl animate-scale-in">
               <div className="aspect-video bg-slate-800 flex items-center justify-center relative">
-<video 
-  className="w-full h-full object-cover" 
-  poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/f47bd0c425406c81537e759ed883e3219f8e733c/capsule_616x353.jpg?t=1750594845" 
-  preload="metadata"
-  playsInline
-  controls
->
-  <source src="/videos/trailer.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+                <video 
+                  className="w-full h-full object-cover" 
+                  poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/f47bd0c425406c81537e759ed883e3219f8e733c/capsule_616x353.jpg?t=1750594845" 
+                  preload="metadata"
+                  autoPlay
+                  muted
+                  playsInline
+                >
+                  <source src="/videos/trailer.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
