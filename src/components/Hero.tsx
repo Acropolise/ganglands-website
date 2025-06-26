@@ -54,7 +54,8 @@ const Hero = () => {
                   muted
                   playsInline
                 >
-<source src="/steam-game-showcase-site/videos/trailer.mp4" type="video/mp4" />                  Your browser does not support the video tag.
+<source src="https://acropolise.github.io/steam-game-showcase-site/videos/trailer.mp4" type="video/mp4" />
+               Your browser does not support the video tag.
                 </video>
               </div>
             </div>
