@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Heart, ExternalLink } from "lucide-react";
 
@@ -10,8 +11,18 @@ const Hero = () => {
     <section 
       id="trailer" 
       className="min-h-screen flex items-center justify-center pt-20 relative bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/f47bd0c425406c81537e759ed883e3219f8e733c/capsule_616x353.jpg?t=1750594845')" }}
+      style={{ 
+        backgroundImage: "url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/f47bd0c425406c81537e759ed883e3219f8e733c/capsule_616x353.jpg?t=1750594845')"
+      }}
     >
+      {/* Mobile background override */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
+        style={{ 
+          backgroundImage: "url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/f47bd0c425406c81537e759ed883e3219f8e733c/capsule_616x353.jpg?t=1750594845')"
+        }}
+      />
+      
       <div className="absolute inset-0 bg-black/70 z-0" />
       
       <div className="container mx-auto px-4 relative z-10">

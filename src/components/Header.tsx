@@ -7,6 +7,10 @@ const Header = () => {
     window.open("https://store.steampowered.com/app/3734080/Ganglands/", "_blank");
   };
 
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700">
       <div className="container mx-auto px-4 py-4">
@@ -14,9 +18,24 @@ const Header = () => {
           <div className="flex items-center space-x-4 md:space-x-8">
             <h1 className="text-xl md:text-2xl font-bold text-white">Ganglands</h1>
             <nav className="hidden md:flex space-x-6">
-              <a href="#trailer" className="text-slate-300 hover:text-white transition-colors">Trailer</a>
-              <a href="#demo" className="text-slate-300 hover:text-white transition-colors">Demo</a>
-              <a href="#screenshots" className="text-slate-300 hover:text-white transition-colors">Screenshots</a>
+              <button 
+                onClick={() => scrollToSection('demo')} 
+                className="text-slate-300 hover:text-white transition-colors cursor-pointer"
+              >
+                Demo
+              </button>
+              <button 
+                onClick={() => scrollToSection('screenshots')} 
+                className="text-slate-300 hover:text-white transition-colors cursor-pointer"
+              >
+                Screenshots
+              </button>
+              <button 
+                onClick={() => scrollToSection('community')} 
+                className="text-slate-300 hover:text-white transition-colors cursor-pointer"
+              >
+                Community
+              </button>
             </nav>
           </div>
           <Button 

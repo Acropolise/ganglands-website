@@ -42,7 +42,7 @@ const Screenshots = () => {
   };
 
   return (
-<section id="screenshots" className="py-20 bg-black">
+    <section id="screenshots" className="py-20 bg-gradient-to-b from-[#111827] to-black transition-all duration-1000 ease-in-out">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Screenshots</h2>

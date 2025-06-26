@@ -20,7 +20,7 @@ const Community = () => {
   };
 
   return (
-<section  className="py-20 bg-gradient-to-b from-[#111827] to-[#030406]">
+    <section id="community" className="py-20 bg-gradient-to-b from-black to-[#030406] transition-all duration-1000 ease-in-out">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Join Our Community</h2>
@@ -33,11 +33,11 @@ const Community = () => {
           {/* Discord */}
           <Button 
             onClick={handleDiscord} 
-            className="bg-indigo-600 hover:bg-indigo-700 text-white p-4 h-auto rounded-xl transition-all duration-200 flex flex-col items-center gap-2 group font-normal"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white p-3 md:p-3 h-16 md:h-20 rounded-xl transition-all duration-200 flex flex-col items-center gap-1 md:gap-2 group font-normal"
           >
-            <MessageCircle className="w-8 h-8 group-hover:scale-110 transition-transform" />
+            <MessageCircle className="w-6 md:w-8 h-6 md:h-8 group-hover:scale-110 transition-transform" />
             <div className="text-center">
-              <h3 className="font-bold text-base">Discord</h3>
+              <h3 className="font-bold text-sm md:text-base">Discord</h3>
               <p className="text-xs opacity-90 hidden md:block">Chat & Community</p>
             </div>
           </Button>
@@ -45,11 +45,11 @@ const Community = () => {
           {/* YouTube */}
           <Button 
             onClick={handleYoutube} 
-            className="bg-red-600 hover:bg-red-700 text-white p-4 h-auto rounded-xl transition-all duration-200 flex flex-col items-center gap-2 group"
+            className="bg-red-600 hover:bg-red-700 text-white p-3 md:p-3 h-16 md:h-20 rounded-xl transition-all duration-200 flex flex-col items-center gap-1 md:gap-2 group"
           >
-            <Youtube className="w-8 h-8 group-hover:scale-110 transition-transform" />
+            <Youtube className="w-6 md:w-8 h-6 md:h-8 group-hover:scale-110 transition-transform" />
             <div className="text-center">
-              <h3 className="font-bold text-base">YouTube</h3>
+              <h3 className="font-bold text-sm md:text-base">YouTube</h3>
               <p className="text-xs opacity-90 hidden md:block">Trailers & Gameplay</p>
             </div>
           </Button>
@@ -57,11 +57,11 @@ const Community = () => {
           {/* Steam */}
           <Button 
             onClick={handleSteam} 
-            className="bg-cyan-600 hover:bg-cyan-700 text-white p-4 h-auto rounded-xl transition-all duration-200 flex flex-col items-center gap-2 group"
+            className="bg-cyan-600 hover:bg-cyan-700 text-white p-3 md:p-3 h-16 md:h-20 rounded-xl transition-all duration-200 flex flex-col items-center gap-1 md:gap-2 group"
           >
-            <ExternalLink className="w-8 h-8 group-hover:scale-110 transition-transform" />
+            <ExternalLink className="w-6 md:w-8 h-6 md:h-8 group-hover:scale-110 transition-transform" />
             <div className="text-center">
-              <h3 className="font-bold text-base">Steam</h3>
+              <h3 className="font-bold text-sm md:text-base">Steam</h3>
               <p className="text-xs opacity-90 hidden md:block">Store & Reviews</p>
             </div>
           </Button>
@@ -69,13 +69,13 @@ const Community = () => {
           {/* Instagram */}
           <Button 
             onClick={handleInstagram} 
-            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white p-4 h-auto rounded-xl transition-all duration-200 flex flex-col items-center gap-2 group"
+            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white p-3 md:p-3 h-16 md:h-20 rounded-xl transition-all duration-200 flex flex-col items-center gap-1 md:gap-2 group"
           >
-            <div className="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <span className="text-lg font-bold">📷</span>
+            <div className="w-6 md:w-8 h-6 md:h-8 rounded-lg bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span className="text-sm md:text-lg font-bold">📷</span>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-base">Instagram</h3>
+              <h3 className="font-bold text-sm md:text-base">Instagram</h3>
               <p className="text-xs opacity-90 hidden md:block">Behind the Scenes</p>
             </div>
           </Button>
