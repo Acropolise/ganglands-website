@@ -51,8 +51,8 @@ const Hero = () => {
                   poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/f47bd0c425406c81537e759ed883e3219f8e733c/capsule_616x353.jpg?t=1750594845" 
                   preload="metadata"
                   autoPlay
-                  muted
                   playsInline
+                  controls
                 >
 <source src="https://acropolise.github.io/steam-game-showcase-site/videos/trailer.mp4" type="video/mp4" />
                Your browser does not support the video tag.
