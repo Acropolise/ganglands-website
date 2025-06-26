@@ -50,7 +50,6 @@ const Hero = () => {
                   className="w-full h-full object-cover" 
                   poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/f47bd0c425406c81537e759ed883e3219f8e733c/capsule_616x353.jpg?t=1750594845" 
                   preload="metadata"
-                  autoPlay
                   playsInline
                   controls
                 >
