@@ -1,15 +1,11 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
-
 const Demo = () => {
   const handleSteamDownload = () => {
     window.open("https://store.steampowered.com/", "_blank");
   };
-
-  return (
-    <section id="demo" className="py-20 bg-gradient-to-b from-[#000000] to-[#111827] transition-all duration-1000 ease-in-out">
+  return <section id="demo" className="py-20 bg-gradient-to-b from-[#000000] to-[#111827] transition-all duration-1000 ease-in-out">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Try the Demo</h2>
@@ -20,11 +16,7 @@ const Demo = () => {
           {/* Left side - Game GIF */}
           <div className="relative rounded-xl overflow-hidden shadow-2xl">
             <div className="aspect-video bg-slate-900 flex items-center justify-center">
-              <img 
-                src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" 
-                alt="Ganglands Gameplay" 
-                className="w-full h-full object-cover" 
-              />
+              <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="Ganglands Gameplay" className="w-full h-full object-cover" />
               <div className="absolute bottom-4 left-4 text-white">
                 <p className="text-sm font-semibold">Live Gameplay</p>
               </div>
@@ -36,23 +28,16 @@ const Demo = () => {
             <Card className="bg-slate-900/80 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-8">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-8">Download on Steam</h3>
-                <Button 
-                  onClick={handleSteamDownload} 
-                  className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-4 text-lg md:text-xl font-semibold rounded-lg transition-all duration-200 flex items-center justify-center gap-3"
-                >
+                <Button onClick={handleSteamDownload} className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-4 text-lg md:text-xl font-semibold rounded-lg transition-all duration-200 flex items-center justify-center gap-3">
                   <ExternalLink className="w-6 h-6" />
                   Download Free Demo on Steam
                 </Button>
-                <p className="text-center text-slate-400 text-sm mt-4">
-                  Free to download • Available now
-                </p>
+                <p className="text-center text-slate-400 text-sm mt-4">Free to download • Only 2GB size!</p>
               </CardContent>
             </Card>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Demo;
