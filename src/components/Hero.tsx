@@ -73,7 +73,7 @@ const Hero = () => {
                   playsInline
                   controls
                 >
-<source src="/videos/trailer.mp4" type="video/mp4" />
+<source src="/steam-game-showcase-site/videos/trailer.mp4" type="video/mp4" />
 
                   Your browser does not support the video tag.
                 </video>
