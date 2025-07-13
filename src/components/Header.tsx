@@ -15,7 +15,7 @@ const Header = () => {
           <div className="flex items-center space-x-4 md:space-x-8">
             <h1 className="text-xl md:text-2xl font-bold text-white">Ganglands</h1>
             <nav className="hidden md:flex space-x-6">
-              <button onClick={() => scrollToSection('demo')} className="text-slate-300 hover:text-white transition-colors cursor-pointer text-base font-bold rounded-none">Try Free Demo!</button>
+              {/* <button onClick={() => scrollToSection('demo')} className="text-slate-300 hover:text-white transition-colors cursor-pointer text-base font-bold rounded-none">Try Free Demo!</button> */}
               <button onClick={() => scrollToSection('screenshots')} className="text-slate-300 hover:text-white transition-colors cursor-pointer">
                 Screenshots
               </button>
@@ -24,12 +24,15 @@ const Header = () => {
               </button>
             </nav>
           </div>
-          <Button onClick={handleWishlist} className="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-3 md:px-6 py-2 rounded-lg transition-all duration-200 flex items-center gap-1 md:gap-2 text-sm md:text-base">
-            <Heart className="w-3 md:w-4 h-3 md:h-4" />
-            <span className="hidden sm:inline">Wishlist on</span>
-            <span>Steam</span>
-            <ExternalLink className="w-3 md:w-4 h-3 md:h-4" />
-          </Button>
+<Button
+  onClick={handleWishlist}
+  style={{ backgroundColor: '#06B6D4' }}
+  className="hover:brightness-110 text-white px-3 md:px-6 py-2 rounded-lg transition-all duration-200 flex items-center gap-1 md:gap-2 text-sm md:text-base"
+>
+  <Heart className="w-3 md:w-4 h-3 md:h-4" />
+  <span className="hidden sm:inline">Wishlist on Steam</span>
+  <ExternalLink className="w-3 md:w-4 h-3 md:h-4" />
+</Button>
         </div>
       </div>
     </header>;

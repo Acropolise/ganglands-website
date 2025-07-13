@@ -1,31 +1,19 @@
-
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Youtube, ExternalLink } from "lucide-react";
+import { MessageCircle, Youtube, Instagram, ExternalLink } from "lucide-react";
 
 const Community = () => {
-  const handleDiscord = () => {
-    window.open("https://discord.gg/nexuswars", "_blank");
-  };
-
-  const handleYoutube = () => {
-    window.open("https://youtube.com/@nexuswars", "_blank");
-  };
-
-  const handleSteam = () => {
-    window.open("https://store.steampowered.com/", "_blank");
-  };
-
-  const handleInstagram = () => {
-    window.open("https://instagram.com/nexuswars", "_blank");
-  };
+  const handleDiscord = () => window.open("https://discord.com/invite/JvWZRQzBFM", "_blank");
+  const handleYoutube = () => window.open("https://www.youtube.com/@playganglands", "_blank");
+  const handleSteam = () => window.open("https://store.steampowered.com/app/3734080/Ganglands/", "_blank");
+  const handleInstagram = () => window.open("https://www.instagram.com/playganglands/", "_blank");
 
   return (
-    <section id="community" className="py-20 bg-gradient-to-b from-black to-[#030406] transition-all duration-1000 ease-in-out">
+    <section id="community" className="py-20 bg-gradient-to-b from-[#111827] to-[#000000] transition-all duration-1000 ease-in-out">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Join Our Community</h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
-            Connect with fellow players, get the latest updates, and be part of the Ganglands universe
+            Connect with players, get updates and access early versions!
           </p>
         </div>
         
@@ -37,7 +25,7 @@ const Community = () => {
           >
             <MessageCircle className="w-6 md:w-8 h-6 md:h-8 group-hover:scale-110 transition-transform" />
             <div className="text-center">
-              <h3 className="font-bold text-sm md:text-base">Discord</h3>
+              <h3 className="text-sm md:text-base">Discord</h3>
               <p className="text-xs opacity-90 hidden md:block">Chat & Community</p>
             </div>
           </Button>
@@ -49,7 +37,7 @@ const Community = () => {
           >
             <Youtube className="w-6 md:w-8 h-6 md:h-8 group-hover:scale-110 transition-transform" />
             <div className="text-center">
-              <h3 className="font-bold text-sm md:text-base">YouTube</h3>
+              <h3 className="text-sm md:text-base">YouTube</h3>
               <p className="text-xs opacity-90 hidden md:block">Trailers & Gameplay</p>
             </div>
           </Button>
@@ -59,9 +47,14 @@ const Community = () => {
             onClick={handleSteam} 
             className="bg-cyan-600 hover:bg-cyan-700 text-white p-3 md:p-3 h-16 md:h-20 rounded-xl transition-all duration-200 flex flex-col items-center gap-1 md:gap-2 group"
           >
-            <ExternalLink className="w-6 md:w-8 h-6 md:h-8 group-hover:scale-110 transition-transform" />
+            {/* Use your local Steam SVG icon here */}
+            <img 
+              src="icons/steamIcon.png" 
+              alt="Steam" 
+              className="w-4 md:w-6 h-4 md:h-8 group-hover:scale-110 transition-transform" 
+            />
             <div className="text-center">
-              <h3 className="font-bold text-sm md:text-base">Steam</h3>
+              <h3 className="text-sm md:text-base">Steam</h3>
               <p className="text-xs opacity-90 hidden md:block">Store & Reviews</p>
             </div>
           </Button>
@@ -71,11 +64,9 @@ const Community = () => {
             onClick={handleInstagram} 
             className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white p-3 md:p-3 h-16 md:h-20 rounded-xl transition-all duration-200 flex flex-col items-center gap-1 md:gap-2 group"
           >
-            <div className="w-6 md:w-8 h-6 md:h-8 rounded-lg bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <span className="text-sm md:text-lg font-bold">📷</span>
-            </div>
+            <Instagram className="w-6 md:w-8 h-6 md:h-8 group-hover:scale-110 transition-transform" />
             <div className="text-center">
-              <h3 className="font-bold text-sm md:text-base">Instagram</h3>
+              <h3 className="text-sm md:text-base">Instagram</h3>
               <p className="text-xs opacity-90 hidden md:block">Behind the Scenes</p>
             </div>
           </Button>

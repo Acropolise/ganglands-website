@@ -7,33 +7,33 @@ const Screenshots = () => {
   const screenshots = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Cyberpunk cityscape with neon lights"
+      src: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/bbf10bdaa964010c2d13d223e8b5b814fc66f76e/ss_bbf10bdaa964010c2d13d223e8b5b814fc66f76e.1920x1080.jpg?t=1752231397",
+      alt: "Town"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Dark atmospheric forest scene"
+      src: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/88922f77a5773ae0650cb12cc1746b96324bb191/ss_88922f77a5773ae0650cb12cc1746b96324bb191.1920x1080.jpg?t=1752231397",
+      alt: "Bank"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Futuristic building architecture"
+      src: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/e023b9a37ed99f991f89ae78d61398e526407faf/ss_e023b9a37ed99f991f89ae78d61398e526407faf.1920x1080.jpg?t=1752231397",
+      alt: "Be a dealer"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Abstract geometric building design"
+      src: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/ec926975dba8d266ac44711b9c49e58bdf17882a/ss_ec926975dba8d266ac44711b9c49e58bdf17882a.1920x1080.jpg?t=1752231397",
+      alt: "Gangs"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Blue starry night scene"
+      src: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/63870b2cde7bf1f23bf013e47c311badc83e50fc/ss_63870b2cde7bf1f23bf013e47c311badc83e50fc.1920x1080.jpg?t=1752231397",
+      alt: "Rob house"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Body of water surrounded by trees"
+      src: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734080/b1e2fbd9e468dee15d07895891af60c223b3a800/ss_b1e2fbd9e468dee15d07895891af60c223b3a800.1920x1080.jpg?t=1752231397",
+      alt: "Lockpick"
     }
   ];
 
@@ -42,12 +42,12 @@ const Screenshots = () => {
   };
 
   return (
-    <section id="screenshots" className="py-20 bg-gradient-to-b from-[#111827] to-black transition-all duration-1000 ease-in-out">
+    <section id="screenshots" className="py-20 bg-gradient-to-b from-[#000000] to-[#111827] transition-all duration-1000 ease-in-out">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Screenshots</h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
-            Explore the stunning visuals and immersive environments of Ganglands
+            Real-time shots captured directly from gameplay!
           </p>
         </div>
         
